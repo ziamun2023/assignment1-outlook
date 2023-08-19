@@ -1,0 +1,104 @@
+/* Basic styling, adjust as needed */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font1{
+  font-family: 'Aleo', serif;
+  
+}
+
+.downArrow{
+  animation: updown 2s ease-in-out infinite;
+}
+
+@keyframes updown {
+  0% ,100% {
+    transform: translateY(0);
+  }
+  50%  {
+    transform: translateY(20px);
+  }
+}
+
+p,div,a{
+  color: rgb(76, 75, 75);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+ 
+  
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+   display: grid;
+   background-color: white;
+
+
+
+  
+}
+
+.navbar {
+  list-style: none;
+  /* margin: 0; */
+  padding: 0;
+  display: flex;
+
+  justify-content: center;
+  
+ 
+}
+
+.navbar li {
+  margin-right: 20px;
+  
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(12, 0, 0);
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.navbar a.active {
+  color: rgb(200,162,214);
+  font-weight: 500;
+ /* Set the color you want for the active link */
+
+
+}
+
+
+.cartChild{
+  width: auto;
+
+  height: 300px;
+  margin-top: 400px;
+ 
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  transition-duration: 600ms;
+
+
+
+}
+
+.cart{
+
+  overflow: hidden;
+}
